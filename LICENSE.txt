@@ -1,5 +1,4 @@
 Package: uk.co.compucorp.updaterelationshipbasedondates
-Copyright (C) 2019, Muhammad Shahrukh <shahrukh@compucorp.co.uk>
 Licensed under the GNU Affero Public License 3.0 (below).
 
 -------------------------------------------------------------------------------

@@ -1,6 +1,17 @@
 # uk.co.compucorp.updaterelationshipbasedondates
 
-This extension introduces a scheduled job which updates all relationship statuses based on start and end dates.
+This extension introduces a scheduled job which updates relationship statuses based on start and end dates.
+When the scheduled job is ran it impacts the is_active column of following relationships in the below described manner
+
+
+
+
+| Relationship Date Conditions                                                | Impact On is_active Column           |
+| --------------------------------------------------------------------------- |:------------------------------------:|
+| Relationships with a start date in future and end date as null or in future | Value is changed to 0                |
+| Relationships with a start date of today or in past and end date as null    | Value is changed to 1                |
+| Relationships with a start and end dates both in future                     | Value is changed to 0                |
+| Relationships with a start date in past and end date in future              | Value is changed to 1                |
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
